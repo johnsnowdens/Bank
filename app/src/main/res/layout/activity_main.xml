@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="46dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/museum"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:src="@drawable/world_skills_bank"
+            android:layout_marginLeft="16dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/banksBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="26dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/main_button_background">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/map_pin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Отделения и банкоматы"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/moneyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/main_button_background">
+
+        <ImageView
+            android:id="@+id/moneyImg"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/money"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/moneyImg"
+            android:text="Курсы валют"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="31.12.2018"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/usd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="USD "
+            android:textStyle="bold"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="66.2"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/usd"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="EUR "
+            android:layout_toLeftOf="@id/eur"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/eur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75.14"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1740b7"
+        android:textColor="#FFFFFF"
+        android:text="Войти"
+        android:layout_margin="16dp"
+        android:padding="40dp"/>
+
+</LinearLayout>

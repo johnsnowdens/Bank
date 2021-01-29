@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="16dp">
+
+       <TextView
+           android:id="@+id/streetTV"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           tools:text="Москва,ул.Васильев,д.7"
+
+           />
+
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="банкомат"
+
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:id="@+id/isWorkTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nameTV"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentBottom="true"
+        tools:text="Работает"
+
+
+        />
+    <TextView
+        android:id="@+id/WorkStringTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="часы работы:  "
+        android:layout_toLeftOf="@+id/WorkStartEndTV"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/WorkStartEndTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00-00:30"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
